@@ -1,0 +1,50 @@
+[
+  {
+    "name": "calculator-html",
+    "description": "Calculator simplu facut cu HTML, CSS si JavaScript. Primul meu proiect web.",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Mongol241/calculator-html"
+  },
+  {
+    "name": "todo-list",
+    "description": "Lista de task-uri cu posibilitate de adaugare si stergere. Facut pentru a exersa DOM-ul.",
+    "language": "JavaScript",
+    "stargazers_count": 1,
+    "forks_count": 0,
+    "html_url": "https://github.com/Mongol241/todo-list"
+  },
+  {
+    "name": "site-portofoliu",
+    "description": "Primul meu site de portofoliu personal facut de la zero cu HTML si CSS.",
+    "language": "HTML",
+    "stargazers_count": 2,
+    "forks_count": 0,
+    "html_url": "https://github.com/Mongol241/site-portofoliu"
+  },
+  {
+    "name": "joc-ghiceste-numarul",
+    "description": "Joc simplu in Python unde calculatorul genereaza un numar si tu trebuie sa il ghicesti.",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Mongol241/joc-ghiceste-numarul"
+  },
+  {
+    "name": "tema-baze-de-date",
+    "description": "Tema de laborator la materia Baze de Date. Baza de date pentru o biblioteca.",
+    "language": "SQL",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Mongol241/tema-baze-de-date"
+  },
+  {
+    "name": "exercitii-c",
+    "description": "Colectie de exercitii de programare in C rezolvate la facultate.",
+    "language": "C",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Mongol241/exercitii-c"
+  }
+]

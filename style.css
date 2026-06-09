@@ -1,0 +1,422 @@
+/* Windows XP Theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  background: url('bliss.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 36px;
+}
+
+/* ===== DESKTOP ICONS (left column) ===== */
+.desktop-icons {
+  position: fixed;
+  top: 15px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 10;
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  width: 68px;
+  padding: 4px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.desktop-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.desktop-icon span {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+  word-break: break-word;
+}
+
+.desktop-icon:hover {
+  background: rgba(197, 49, 49, 0.4);
+  border-color: rgba(197, 49, 49, 0.7);
+}
+
+/* Currently open page icon - highlighted */
+.desktop-icon.active-icon {
+  background: rgba(49, 106, 197, 0.5);
+  border-color: rgba(100, 150, 255, 0.8);
+}
+
+/* ===== DESKTOP AREA (for pages with a window) ===== */
+.desktop {
+  padding: 15px 15px 15px 100px; /* leave room for icons on left */
+}
+
+/* desktop-only body: no window, just icons + taskbar */
+body.desktop-only {
+  /* nothing extra needed */
+}
+
+/* ===== WINDOW ===== */
+.window {
+  max-width: 850px;
+  margin: 0 auto;
+  border: 2px solid #0054e3;
+  border-radius: 8px 8px 0 0;
+  background: #ece9d8;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+
+/* Title bar with X button */
+.title-bar {
+  background: linear-gradient(180deg, #0058e6, #3a8cff 10%, #0553e9 20%, #003399);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-close {
+  background: linear-gradient(180deg, #e08356, #c73811);
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  width: 21px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.3);
+  flex-shrink: 0;
+}
+
+.title-close:hover {
+  background: linear-gradient(180deg, #f09466, #d74a20);
+}
+
+/* Navigation */
+.nav {
+  border-bottom: 1px solid #aaa;
+  padding: 3px 5px;
+  background: #ece9d8;
+}
+
+.nav a {
+  padding: 3px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 11px;
+}
+
+.nav a:hover,
+.nav a.active {
+  background: #c1d2ee;
+  border: 1px solid #316ac5;
+  border-radius: 2px;
+}
+
+/* Content */
+.content {
+  padding: 15px;
+  min-height: 350px;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #7f9db9;
+  object-fit: cover;
+}
+
+.profile h1 {
+  font-size: 16px;
+  color: #003399;
+}
+
+.profile .role {
+  color: #555;
+  font-style: italic;
+  margin: 3px 0 6px;
+}
+
+.profile p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Group box */
+.group-box {
+  border: 1px solid #7f9db9;
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #f5f3e8;
+}
+
+.group-box legend {
+  font-weight: bold;
+  color: #003399;
+  padding: 0 5px;
+  font-size: 12px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills span {
+  background: #c1d2ee;
+  border: 1px solid #7f9db9;
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 10px;
+  color: #003399;
+}
+
+/* Repo cards */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.repo-card {
+  background: white;
+  border: 1px solid #7f9db9;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.repo-card h3 {
+  font-size: 12px;
+  color: #003399;
+  margin-bottom: 4px;
+}
+
+.repo-card .desc {
+  font-size: 11px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.repo-card .meta {
+  font-size: 10px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.repo-card .meta .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* XP Button */
+.xp-btn {
+  background: #ece9d8;
+  border: 2px outset #ddd;
+  padding: 3px 12px;
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.xp-btn:active {
+  border-style: inset;
+}
+
+/* Timeline items */
+.item {
+  background: white;
+  border: 1px solid #7f9db9;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.item h3 {
+  font-size: 12px;
+  color: #003399;
+}
+
+.item .sub {
+  font-size: 11px;
+  color: #555;
+  font-style: italic;
+}
+
+.item .period {
+  font-size: 10px;
+  color: #888;
+}
+
+.item .details {
+  font-size: 11px;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  font-size: 11px;
+}
+
+.contact-list li {
+  padding: 2px 0;
+}
+
+.contact-list a {
+  color: #0066cc;
+}
+
+/* Status bar */
+.status-bar {
+  border-top: 1px solid #aaa;
+  padding: 3px 8px;
+  font-size: 10px;
+  color: #555;
+}
+
+/* ===== TASKBAR ===== */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: linear-gradient(180deg, #1f5fc7, #3479e2 3%, #1d5bbf 50%, #163d8e);
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  gap: 4px;
+}
+
+.start-btn {
+  background: linear-gradient(180deg, #3b9c3b, #1e7a1e);
+  border: 1px solid #155d15;
+  border-radius: 0 6px 6px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 3px 12px;
+  cursor: pointer;
+  height: 26px;
+  white-space: nowrap;
+}
+
+.taskbar-items {
+  display: flex;
+  gap: 3px;
+  flex: 1;
+}
+
+/* Taskbar tab with X button */
+.taskbar-tab {
+  background: linear-gradient(180deg, #2463c0, #1a4fa0);
+  border: 1px inset #1a4fa0;
+  border-radius: 2px;
+  color: white;
+  font-size: 11px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px 0 8px;
+  gap: 6px;
+  max-width: 200px;
+}
+
+.taskbar-tab span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-close {
+  background: rgba(200, 50, 30, 0.8);
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.tab-close:hover {
+  background: rgba(220, 60, 40, 1);
+}
+
+.clock {
+  margin-left: auto;
+  color: white;
+  font-size: 11px;
+  padding: 0 10px;
+  background: linear-gradient(180deg, #1181d7, #0c5ba3);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #0a4a88;
+  white-space: nowrap;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .desktop-icons {
+    display: none;
+  }
+
+  .desktop {
+    padding: 10px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+}
